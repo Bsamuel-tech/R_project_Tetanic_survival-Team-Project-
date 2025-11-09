@@ -1,0 +1,165 @@
+
+css_content <- "
+/* Professional Styling for Titanic Report */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+.main-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1, h2, h3, h4 {
+  color: #2c3e50;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 2.5em;
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 10px;
+}
+
+h2 {
+  font-size: 2em;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 8px;
+}
+
+h3 {
+  font-size: 1.5em;
+  color: #34495e;
+}
+
+/* Table of Contents */
+#TOC {
+  background-color: #ecf0f1;
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+/* Code blocks */
+pre {
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  overflow-x: auto;
+}
+
+code {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #f8f8f8;
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+/* Tables */
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 90%;
+}
+
+th {
+  background-color: #3498db;
+  color: white;
+  font-weight: bold;
+  padding: 12px;
+  text-align: left;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 4px solid #3498db;
+  padding-left: 20px;
+  margin: 20px 0;
+  font-style: italic;
+  color: #555;
+  background-color: #ecf0f1;
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+
+/* Key findings boxes */
+.key-findings {
+  background-color: #e8f5e9;
+  border-left: 5px solid #4caf50;
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+/* Warning/Important boxes */
+.warning {
+  background-color: #fff3cd;
+  border-left: 5px solid #ffc107;
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+/* Info boxes */
+.info {
+  background-color: #d1ecf1;
+  border-left: 5px solid #17a2b8;
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+/* Figure captions */
+.caption {
+  color: #666;
+  font-style: italic;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Links */
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #2980b9;
+}
+
+/* Tabset styling */
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+"
+
+writeLines(css_content, "styles.css")
+cat("✓ CSS file created successfully\n")
